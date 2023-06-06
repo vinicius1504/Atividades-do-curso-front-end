@@ -1,0 +1,37 @@
+{
+    "produtos":[
+        {
+            "id":1,
+            "nome":"coleira",
+            "produto":"",
+            "descrção": "coleira mashcolor",
+            "valor":9.90
+        },
+        {
+            "id":2,
+            "nome":"Petisco",
+            "descrção": "....",
+            "valor":5.50
+        }, 
+        {
+            "id":3,
+            "nome":"Camas",
+            "descrção": ".....",
+            "valor":9.90
+        } 
+    ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
