@@ -1,61 +1,37 @@
-var botao = document.getElementById("bt")
-var div = document.getElementById("areacd")
-
-const data_end =
-{
-   "itens": [
-      {
-         "id": 1,
-         "nome": "coleira",
-         "imgpd": "/pet-store/produtos/2-wiskas.png",
-         "descricao": "coleira mashcolor",
-         "valor": 9.90
-      },
-      {
-         "id": 2,
-         "nome": "Petisco",
-         "imgpd": "/pet-store/produtos/coelira.jpg",
-         "descricao": "teste",
-         "valor": 5.50
-      },
-      {
-         "id": 3,
-         "nome": "Camas",
-         "imgpd": "/pet-store/produtos/petisco.png",
-         "descricao": "teste",
-         "valor": 9.90
-      }
-   ]
-}
-
-
-
+var botao = document.getElementById("bt") 
+var card = document.getElementById("produto")
 
 function teste_bnt() {
 
-   for (let i = 0; i <=3; i++) {
+   for (let i = 0; i <=6; i++) {
 
-      teste = `
-      <div class='card'>
-      <div class='bxbt'>
-          <div class='bxup'>
-              <div class='produto'>
-              <img src=${data_end.itens[i].imgpd}>
-              </div>
-              <div class='dcrs'>
-                  
-              </div>
-          </div>
-          <div class='osso'>
-              <a href=''>
-                  <img src='/pet-store/img/osio_bn.png' alt=''>
-              </a>
-          </div>
-      </div>
-  </div>
-</div> 
+      cards = `
+      <div class='cards'>
+    <div class='bxbt'>
+        <div class='itens'>
+            <div class='bxup'>
+                <div class='imgpd'>
+                    <img src=${data_end.itens[i].imgpd}>
+                </div>
+                
+            </div>
+            
+            <div class='drsc'>
+                   <p class='p1'>${data_end.itens[i].nome}</p>
+                    <p>${data_end.itens[i].valor}</p>
+                </div>
+                
+                <div class='osso'>
+                    <a href=''>
+                        <img src='/pet-store/img/osso_btn.png' alt=''>
+                    </a>
+                </div>
+        </div>
+    </div>
+</div>
    `
-      div.innerHTML += teste
+   console.log(data_end.itens[i].id)
+      card.innerHTML += cards
 
 
    }
@@ -64,4 +40,90 @@ function teste_bnt() {
 
 
 window.onload = teste_bnt
-botao.onclick = teste_bnt
+// botao.onclick = teste_bnt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const data_end =
+{
+   "itens": [
+      {
+         "id": 2,
+         "nome": "Arranhador Para Gatos Poste. Le Petin",
+         "imgpd": "/pet-store/produtos/binquedo.png",
+         "valor": "R$ 39,00"
+      },
+      {
+         "id": 3,
+         "nome": "Biscrock Pedigreede 1Kg",
+         "imgpd": "/pet-store/produtos/biscrok.png",
+         "valor": "R$ 10,00"
+      },
+      {
+         "id": 4,
+         "nome": "Cama de Melancia, Media",
+         "imgpd": "/pet-store/produtos/cama.png",
+         "valor": "R$ 19,99"
+      },
+      {
+         "id": 5,
+         "nome": "Ração Pedigree para Cães Adultos",
+         "imgpd": "/pet-store/produtos/biscrok.png",
+         "valor": "R$ 10,00"
+      },
+      {
+         "id": 6,
+         "nome": "Biscrock Pedigreede 1Kg",
+         "imgpd": "/pet-store/produtos/biscrok.png",
+         "valor": "R$ 10,00"
+      },
+      {
+         "id": 7,
+         "nome": "Biscrock Pedigreede 1Kg",
+         "imgpd": "/pet-store/produtos/biscrok.png",
+         "valor": "R$ 10,00"
+      },
+      {
+         "id": 8,
+         "nome": "Biscrock Pedigreede 1Kg",
+         "imgpd": "/pet-store/produtos/biscrok.png",
+         "valor": "R$ 10,00"
+      },
+      {
+         "id": 8,
+         "nome": "Biscrock Pedigreede 1Kg",
+         "imgpd": "/pet-store/produtos/biscrok.png",
+         "valor": "R$ 10,00"
+      },
+      {
+         "id": 8,
+         "nome": "Biscrock Pedigreede 1Kg",
+         "imgpd": "/pet-store/produtos/biscrok.png",
+         "valor": "R$ 10,00"
+      },
+      {
+         "id": 8,
+         "nome": "Biscrock Pedigreede 1Kg",
+         "imgpd": "/pet-store/produtos/biscrok.png",
+         "valor": "R$ 10,00"
+      },
+   ]
+}
