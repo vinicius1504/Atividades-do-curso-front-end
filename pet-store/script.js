@@ -1,9 +1,20 @@
-var botao = document.getElementById("bt") 
-var card = document.getElementById("produto")
+var botao = document.getElementById("bt");
+var card = document.getElementsByClassName("produto")[0];
 
+
+function alets (){
+
+
+}
+
+
+
+
+
+alert("Otimas Compras!")
 function teste_bnt() {
-
-   for (let i = 0; i <=6; i++) {
+   
+   for (let i = 0; i <=7; i++) {
 
       cards = `
       <div class='cards'>
@@ -30,6 +41,7 @@ function teste_bnt() {
     </div>
 </div>
    `
+  
    console.log(data_end.itens[i].id)
       card.innerHTML += cards
 
@@ -38,28 +50,9 @@ function teste_bnt() {
 }
 
 
+window.onload = setTimeout(teste_bnt,(2000))
 
-window.onload = teste_bnt
 // botao.onclick = teste_bnt
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const data_end =
@@ -90,40 +83,43 @@ const data_end =
          "valor": "R$ 10,00"
       },
       {
-         "id": 6,
-         "nome": "Biscrock Pedigreede 1Kg",
+         "id": 5,
+         "nome": "Ração Pedigree para Cães Adultos",
          "imgpd": "/pet-store/produtos/biscrok.png",
          "valor": "R$ 10,00"
       },
       {
-         "id": 7,
-         "nome": "Biscrock Pedigreede 1Kg",
+         "id": 5,
+         "nome": "Ração Pedigree para Cães Adultos",
          "imgpd": "/pet-store/produtos/biscrok.png",
          "valor": "R$ 10,00"
       },
       {
-         "id": 8,
-         "nome": "Biscrock Pedigreede 1Kg",
+         "id": 5,
+         "nome": "Ração Pedigree para Cães Adultos",
          "imgpd": "/pet-store/produtos/biscrok.png",
          "valor": "R$ 10,00"
       },
       {
-         "id": 8,
-         "nome": "Biscrock Pedigreede 1Kg",
+         "id": 5,
+         "nome": "Ração Pedigree para Cães Adultos",
          "imgpd": "/pet-store/produtos/biscrok.png",
          "valor": "R$ 10,00"
       },
       {
-         "id": 8,
-         "nome": "Biscrock Pedigreede 1Kg",
+         "id": 5,
+         "nome": "Ração Pedigree para Cães Adultos",
          "imgpd": "/pet-store/produtos/biscrok.png",
          "valor": "R$ 10,00"
       },
       {
-         "id": 8,
-         "nome": "Biscrock Pedigreede 1Kg",
+         "id": 5,
+         "nome": "Ração Pedigree para Cães Adultos",
          "imgpd": "/pet-store/produtos/biscrok.png",
          "valor": "R$ 10,00"
       },
+
+      
+      
    ]
 }
