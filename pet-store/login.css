@@ -1,44 +1,106 @@
+@import url('https://fonts.cdnfonts.com/css/lexend-mega');
+
 body {
     box-sizing: border-box;
-    background-image:'/pet-store/img/fundo_lg.png';           
+    background-image: '/pet-store/img/fundo_lg.png';
     background-repeat: no-repeat;
     background-size: cover;
-
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Lexend Mega';
 }
-.forza{
+.avof {
     display: flex;
-    
-
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
 }
-
-form{
+.paif {
+    border-radius: 25px;
+    display: flex;
+    border: 2px solid black;
     width: 637px;
-height: 584px;
-
-
-background: linear-gradient(180deg, rgba(219, 176, 103, 0.95) 0%, rgba(67, 55, 31, 0.95) 100%);
-border: 2px solid #000000;
-border-radius: 0px 0px 20px 20px;
-
-
+    height: 662px;
+    justify-content: center;
+    background-image: url(/pet-store/img/login_fd.png);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-
-label{
+input {
+    background: #816F61;
+    border-radius: 20px;
+    width: 330px;
+    height: 50px;
     font-family: 'Lexend Mega';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
-line-height: 25px;
-text-align: center;
-
-color: #FFFFFF;
-
 
 }
 
+input:focus {
+    background: #fffbf8;
+    border-radius: 20px;
+}
 
 
+button {
+    margin-top: -30px;
+    width: 200px;
+    height: 52px;
+    font-family: "Lexend Mega";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* color: #000000; */
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    border-radius: 30px;
+}
+
+button:active{
+    background: #513E31;
+border: 1px solid #FFFFFF;
+
+}
+
+.txtlg {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.txtlg .txtlk{
+    margin-top: -25px;
+
+}
+.form {
+    display: flex;
+}
+.txtlk {
+    /* border: 1px rgb(255, 0, 242) solid; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.52);
+    word-wrap: break-word;
+    
+}
 
 
+.tittle{
+    color: #FFFFFF;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 45px;
 
+}
