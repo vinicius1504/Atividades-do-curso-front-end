@@ -14,7 +14,7 @@ function alets (){
 alert("Otimas Compras!")
 function teste_bnt() {
    
-   for (let i = 0; i <=7; i++) {
+   for (let i = 0; i <data_end.itens.length; i++) {
 
       cards = `
       <div class='cards'>
@@ -99,25 +99,7 @@ const data_end =
          "nome": "Ração Pedigree para Cães Adultos",
          "imgpd": "/pet-store/produtos/biscrok.png",
          "valor": "R$ 10,00"
-      },
-      {
-         "id": 5,
-         "nome": "Ração Pedigree para Cães Adultos",
-         "imgpd": "/pet-store/produtos/biscrok.png",
-         "valor": "R$ 10,00"
-      },
-      {
-         "id": 5,
-         "nome": "Ração Pedigree para Cães Adultos",
-         "imgpd": "/pet-store/produtos/biscrok.png",
-         "valor": "R$ 10,00"
-      },
-      {
-         "id": 5,
-         "nome": "Ração Pedigree para Cães Adultos",
-         "imgpd": "/pet-store/produtos/biscrok.png",
-         "valor": "R$ 10,00"
-      },
+      }
 
       
       
