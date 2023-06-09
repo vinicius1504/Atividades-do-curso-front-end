@@ -76,11 +76,13 @@ border: 1px solid #FFFFFF;
     font-size: 20px;
     line-height: 25px;
     color: #FFFFFF;
+    /* border: 1px rgb(255, 0, 242) solid; */
 }
 .txtlg .txtlk{
     margin-top: -25px;
 
 }
+
 .form {
     display: flex;
 }
@@ -95,7 +97,10 @@ border: 1px solid #FFFFFF;
     
 }
 
-
+#cd a{
+    color: rgba(255, 255, 255, 0.52);
+    text-decoration: none;
+}
 .tittle{
     color: #FFFFFF;
 font-style: normal;
