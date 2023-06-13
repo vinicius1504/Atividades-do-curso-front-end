@@ -1,0 +1,48 @@
+@import url('https://fonts.cdnfonts.com/css/koho-2');
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'KoHo', sans-serif;
+    
+}
+
+/* login and Register */
+
+
+.topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    /* border: 3px black solid; */
+    background-color: rgba(63, 38, 28, 1);
+}
+
+.topo .fundo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    /* bord3r: 10px green solid; */
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.carrinho {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    padding: 0px 6px 0px 6px;
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    font-size: 15px;
+}

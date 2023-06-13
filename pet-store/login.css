@@ -25,7 +25,7 @@ body {
     justify-content: center;
     background-image: url(/pet-store/img/login_fd.png);
 }
-form {
+.formualrio {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -34,19 +34,24 @@ form {
 
 input {
     background: #816F61;
+    border-color: #000000;
+    color: #ffffff;
     border-radius: 20px;
     width: 330px;
     height: 50px;
     font-family: 'Lexend Mega';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
 
 }
 
 input:focus {
-    background: #fffbf8;
-    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 0 ;
+    border: 2px black;
+    outline: 0;
+    color: #000000;
 }
 
 
@@ -78,6 +83,7 @@ border: 1px solid #FFFFFF;
     color: #FFFFFF;
     /* border: 1px rgb(255, 0, 242) solid; */
 }
+
 .txtlg .txtlk{
     margin-top: -25px;
 
@@ -108,4 +114,8 @@ font-weight: 400;
 font-size: 20px;
 line-height: 45px;
 
+}
+
+.entrar{
+    display: flex;
 }

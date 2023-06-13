@@ -90,9 +90,15 @@ const data_end =
       },
       {
          "id": 5,
-         "nome": "Valentina",
+         "nome": "Ração Pedigree para Cães Adultos",
          "imgpd": "/pet-store/produtos/biscrok.png",
-         "valor": "R$ 0,00"
+         "valor": "R$ 10,00"
+      },
+      {
+         "id": 5,
+         "nome": "Ração Pedigree para Cães Adultos",
+         "imgpd": "/pet-store/produtos/biscrok.png",
+         "valor": "R$ 10,00"
       },
       {
          "id": 5,
