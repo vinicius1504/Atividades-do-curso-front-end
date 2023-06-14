@@ -2,40 +2,42 @@ var user = document.getElementById("usuario")
 var password = document.getElementById("Senha")
 var loginBnt = document.getElementById("loginBnt")
 var ShowPass = document.getElementById("ShowPass")
-var nome = user.vaule
-var senha = password.vaule
+var nome = "admin"
+var senha = "admin"
 
 
 // console.log(user, password, loginBnt, ShowPass)
 
-function forms() {
-    // alert("Bem-Vindo " + user.value)
-    // alert("sua senha " + password.value)
+function repostaLg() { // função para o usuario responder se esta certo o usuario
     verificar(user, password)
-}
-
-function Showpassword() {
-    // console.log("ola")
-    if (password.type == 'text') {
-        password.type = 'password'
-    } else {
-        password.type = 'text'
+    if (user.value == nome && password.value == senha){
+        alert("bem vindo " + user.value)
+        location.href('/pet-store/pag_principal.html')
+    }
+    else{
+        alert("tem cadastro aqui n")
     }
 }
 
-function verificar (user, password){
-        if (user ==nome & password ==senha){
-            console.log("eror")
+function verificar (user, password){ //função para verificar se é igual
+        if (user.value == nome && password.value == senha){
             return true
         }
             
     }
     
 
+function Showpassword() {
+        // console.log("ola")
+        if (password.type == 'text') {
+            password.type = 'password'
+        } else {
+            password.type = 'text'
+        }
+    }
 
+loginBnt.onclick = repostaLg
 ShowPass.onclick = Showpassword
-loginBnt.onclick = forms
-
 const usuario = {
     "users": [
         {
