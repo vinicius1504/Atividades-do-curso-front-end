@@ -2,8 +2,8 @@ var user = document.getElementById("usuario")
 var password = document.getElementById("Senha")
 var loginBnt = document.getElementById("loginBnt")
 var ShowPass = document.getElementById("ShowPass")
-var nome = "admin"
-var senha = "admin"
+var nome = "fredeico"
+var senha = "12345"
 
 
 // console.log(user, password, loginBnt, ShowPass)
