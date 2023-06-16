@@ -13,6 +13,7 @@
          .produto{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             border: 1px rgb(245, 0, 0) solid;
             gap: 20px;
          }
@@ -26,6 +27,10 @@
     </style>
 </head>
 <body>
+    <div class="titulo">
+        <h1>Mercado pote</h1>
+
+    </div>
     <div class="itens">
         <div id="areacd" class="produto">
             
@@ -37,7 +42,7 @@
         </div>
     </div>
 
-    <button id="addshop">comprar</button>
+    <button id="CleanShop">Limpar carrinho</button>
     
     <h1>carrinho</h1>
     <div class="itens">
@@ -49,6 +54,8 @@
         <div class="prodshop">
         </div>
     </div>
+    
+    <button id="addshop">comprar</button>
 </body>
 
 <script src="/index.js">

@@ -2,40 +2,47 @@ var card = document.getElementById("areacd")
 var btn = document.getElementById("add")
 var btnshop = document.getElementById("addshop")
 var shop = document.getElementById("areacd2")
-
-var ids = []
-
-function AddShop(){
-    
-
-}
+var CleanShop = document.getElementById("CleanShop")
 
 
-function gerarPod (){
+
+
+window.onload = function (){ // gerar os produos na tela de acordo com o json interno
     for ( let i = 0; i< itens.prod.length; i++){
         mecadoria = `
         <div class="prod">
         <h1>${itens.prod[i].aliment}</h1>
         <p>${itens.prod[i].valor}</p>
-        <button id = "${itens.prod[i].id}">adiconar</button>
+        <button onclick= "AddShop(${i})" id ="${itens.prod[i].id}">adiconar</button>
         </div>
         `
         card.innerHTML += mecadoria
-
-        var promt = document.getElementById(itens.prod[i].id)
-        promt.onclick = function(){
-            console.log("ola")
-            
-        }
-
+        
     }
 }
 
 
+function AddShop(index){// função para add no carrinho
+    mecadoria = `
+    <div class="prod">
+    <h1>${itens.prod[index].aliment}</h1>
+    <p>${itens.prod[index].valor}</p>
+    <button onclick= "removeshop(this)" id ="${itens.prod[index].id}">Remover</button>
+    </div>
+    `
+    shop.innerHTML += mecadoria
+    console.log(itens.prod[index])
+}
 
 
-window.onload = gerarPod
-// 
+
+function removeshop(index){// esse aqui remove individual
+    index.parentNode.remove()
+    }
+
+CleanShop.onclick = function(){// limpar todo o carrinho
+    shop.remove()
+    }
 
 
 const itens = {
