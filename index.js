@@ -4,6 +4,11 @@ var btnshop = document.getElementById("addshop")
 var shop = document.getElementById("areacd2")
 var CleanShop = document.getElementById("CleanShop")
 
+// area de valores
+var resultado = document.getElementById("resultado")
+var valorGeral = []
+var total = []
+var carrinhoGeral = []
 
 
 
@@ -31,7 +36,34 @@ function AddShop(index){// função para add no carrinho
     </div>
     `
     shop.innerHTML += mecadoria
-    console.log(itens.prod[index])
+    // console.log(itens.prod[index])
+    valor.push(itens.prod[index].valor)
+
+    // console.log(valor)
+
+}
+
+function carrinho (){
+    shopitens = 
+    `
+    
+    `
+
+}
+
+btnshop.onclick = function(){
+    var soma = 0
+    for (let i = 0; i<valor.length; i++){
+        soma += valor[i]
+    }
+
+    result = 
+    `
+    <h3>${soma}</h3>
+    `
+
+    resultado.innerHTML = result
+    // console.log(soma)
 }
 
 
@@ -41,35 +73,45 @@ function removeshop(index){// esse aqui remove individual
     }
 
 CleanShop.onclick = function(){// limpar todo o carrinho
-    shop.remove()
-    }
+    while (shop.hasChildNodes()){
+    shop.removeChild(shop.firstChild)
+    }}
+
+
+
+
+
+
+
+
+
 
 
 const itens = {
     "prod": [
         {
             "aliment": "banana",
-            "valor" : "6,00",
+            "valor" : 6.00,
             "id" : "1"
         },
         {
             "aliment": "maça",
-            "valor" : "5,00",
+            "valor" : 5.00,
             "id" : "2"
         },
         {
             "aliment": "pera",
-            "valor" : "10,00",
+            "valor" : 10.00,
             "id" : "3"
         },
         {
             "aliment": "melancia",
-            "valor" : "4,00",
+            "valor" : 4.00,
             "id" : "4"
         },
         {
             "aliment": "uva",
-            "valor" : "30,00",
+            "valor" : 3.00,
             "id" : "5"
         },
     ]
