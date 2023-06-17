@@ -3,7 +3,8 @@ var btn = document.getElementById("add")
 var btnshop = document.getElementById("addshop")
 var shop = document.getElementById("areacd2")
 var CleanShop = document.getElementById("CleanShop")
-
+var hidde = document.getElementById("hidde")
+var teste = document.getElementById("teste")
 // area de valores
 var resultado = document.getElementById("resultado")
 var valorGeral = []
@@ -37,24 +38,17 @@ function AddShop(index){// função para add no carrinho
     `
     shop.innerHTML += mecadoria
     // console.log(itens.prod[index])
-    valor.push(itens.prod[index].valor)
-
-    // console.log(valor)
-
-}
-
-function carrinho (){
-    shopitens = 
-    `
-    
-    `
+    valorGeral.push(itens.prod[index].valor)
+    console.log(valorGeral)
 
 }
+
+
 
 btnshop.onclick = function(){
     var soma = 0
-    for (let i = 0; i<valor.length; i++){
-        soma += valor[i]
+    for (let i = 0; i<valorGeral.length; i++){
+        soma += valorGeral[i]
     }
 
     result = 
@@ -63,7 +57,7 @@ btnshop.onclick = function(){
     `
 
     resultado.innerHTML = result
-    // console.log(soma)
+    console.log(soma)
 }
 
 
@@ -76,13 +70,6 @@ CleanShop.onclick = function(){// limpar todo o carrinho
     while (shop.hasChildNodes()){
     shop.removeChild(shop.firstChild)
     }}
-
-
-
-
-
-
-
 
 
 
