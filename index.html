@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .itens{
+        body{
+            background-color: rgb(212, 212, 212);
+        }
+        .titulo {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btns{
+            display: flex;
+            justify-content: center;
+        }
+        .itens {
             display: flex;
             flex-direction: row;
+            justify-content: center;
 
         }
-         .produto{
+
+        .produto {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            border: 1px rgb(245, 0, 0) solid;
+            /* border: 1px rgb(245, 0, 0) solid; */
             gap: 20px;
-         }
-         .prod{
+        }
+
+        .prod {
             align-items: center;
             display: flex;
             flex-direction: column;
-            border: 1px black solid;
-         }
-
+            /* border: 1px black solid; */
+        }
     </style>
 </head>
+
 <body>
     <div class="titulo">
         <h1>Mercado pote</h1>
-
     </div>
     <div class="itens">
         <div id="areacd" class="produto">
-            
-
-
-            
-            
-            
         </div>
     </div>
     <br>
-    <button id="CleanShop">Limpar carrinho</button>
-    
-    <h1>carrinho</h1>
+    <div class="btns">
+        <button id="CleanShop">Limpar carrinho</button>
+    </div>
+    <div class="titulo">
+        <h1>Carinho</h1>
+    </div>
     <div class="itens">
         <div id="areacd2" class="produto">
-           
+
         </div>
     </div>
     <div class="carriho">
         <div class="prodshop">
         </div>
     </div>
-    
-    <button id="addshop">comprar</button>
-
+    <br>
+    <div class="btns">
+        <button id="addshop">finalizar compra</button>
+    </div>
     <div id="resultado">
-        
+
     </div>
 </body>
 
 <script src="/index.js">
 </script>
+
 </html>
