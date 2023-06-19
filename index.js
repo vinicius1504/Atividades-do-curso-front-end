@@ -25,7 +25,7 @@ window.onload = function(){
                 src="${data_produtos.produtos[i].img}"> 
         </div>
         <div class="txt_valor">
-            <p>R$: ${data_produtos.produtos[i].Valor}</p>
+            <p>R$: ${data_produtos.produtos[i].Valor.toFixed(2)}</p>
         </div>
         <button onclick= "Adicioanr_carrinho(${i})" id ="${data_produtos.produtos[i].id}">Adicionar</button>
     </div>`
@@ -41,7 +41,7 @@ function Adicioanr_carrinho (itens){
             src="${ data_produtos.produtos[itens].img}">
     </div>
     <div class="txt_valor">
-        <p>R$: ${ data_produtos.produtos[itens].Valor}</p>
+        <p>R$: ${ data_produtos.produtos[itens].Valor.toFixed(2)}</p>
     </div>
     <button onclick= "remover_prod(this)" id ="${ data_produtos.produtos[itens].id}">Remover</button>
 </div>
@@ -61,7 +61,7 @@ function somar_valores(){
     for (let i = 0; i<total.length; i++){
         somar += total[i]
     }
-    resultado_total.innerHTML = `<P>R$: ${somar}</P>`
+    resultado_total.innerHTML = `<P>R$: ${somar.toFixed(2)}</P>`
 }
 function qtd_dif(itens){
     const puxar_diferentes = (array, valo) => 
@@ -83,16 +83,13 @@ function limparcarrinho(){
         Carrinho_geral = []
         descontos = []
 }
-}
-limpar_carrinho.onclick = limparcarrinho
-
+} limpar_carrinho.onclick = limparcarrinho
 function finalizarCompra(){
     val = descontos.pop()
     result = +somar - +val;
     console.log(result)
     swal.fire("Sua compra deu o toal de: R$"+result)
-}
-finalizar_Compra.onclick = finalizarCompra
+} finalizar_Compra.onclick = finalizarCompra
 
 
 const data_produtos = 
