@@ -1,7 +1,8 @@
 // Variaves para os produtos
 var card_prod = document.getElementById("card_prod")  
 var card_shop = document.getElementById("card_shop")
-
+var limpar_carrinho = document.getElementById("limpar_carrinho")
+var finalizar_Compra = document.getElementById("finalizar_Compra")
 //Variaves para os valores em geral de Total,Unidade e Desconto
 var resultado_total = document.getElementById("resultado_total")
 var resultado_Desconto = document.getElementById("resultado_Desconto")
@@ -67,18 +68,31 @@ function qtd_dif(itens){
     array.reduce((acc, iten) => valo === iten ? acc + 1 :acc, 0)
     var dif = puxar_diferentes(Carrinho_geral, data_produtos.produtos[itens].id)
     if (dif ===3){
-        swal("Vc ganhou 10% de desconto")
+        swal.fire("Você ganhou 10% de desconto")
         resultado_Desconto.innerHTML = `<P>R$: ${(somar*0.1).toFixed(2)}</P>`
         descontos.push(somar*0.1)}
     else if(dif ===5){
-        swal("Vc ganhou 15% de desconto")
+        swal.fire("Você ganhou 15% de desconto")
         resultado_Desconto.innerHTML = `<P>R$: ${(somar*0.1).toFixed(2)}</P>`
         descontos.push(somar*0.1)}
 }
+function limparcarrinho(){
+    while (card_shop.hasChildNodes()) {
+        card_shop.removeChild(card_shop.firstChild);
+        total = []
+        Carrinho_geral = []
+        descontos = []
+}
+}
+limpar_carrinho.onclick = limparcarrinho
 
-
- 
-
+function finalizarCompra(){
+    val = descontos.pop()
+    result = +somar - +val;
+    console.log(result)
+    swal.fire("Sua compra deu o toal de: R$"+result)
+}
+finalizar_Compra.onclick = finalizarCompra
 
 
 const data_produtos = 
