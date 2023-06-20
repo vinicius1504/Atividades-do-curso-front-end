@@ -3,10 +3,13 @@ body {
     box-sizing: border-box;
     margin: 0px;
     font-family: 'KoHo', sans-serif;
-    
 }
 
 /* login and Register */
+
+.pag_principal{
+
+}
 
 
 .topo {
@@ -275,15 +278,30 @@ body {
 
 
 
-/* .itens{
-    border: 1px solid #050505;
+
+.CarrinhoTopo {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row;
+    background-color: rgb(71, 49, 37);
+    border: 1px black solid;
 }
 
-.drsc{
-    border: 1px solid #000000;
+.BntCarrinho img {
+    height: 41px;
+    width: 42px;
+}
+
+.AbaCarrinho {
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    height: 500px;
+}
+
+.meiocarrinho{
+    height: 100%;
+    background-color: blanchedalmond;
     
 }
-
-.osso{
-    border: 1px solid #860000;
-} */
