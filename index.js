@@ -103,16 +103,20 @@ limpar_carrinho.onclick = limparcarrinho
 function finalizarCompra(){
     var desc = [... new Set(descontos.map(x => x))].length
     console.log(desc)
-    var val = descontos.pop()
-    result = +somar - +val;
+    val = descontos.pop()
+    result = +somar - +val
     
-    if (desc === 0)
+    if (desc == 0)
     {
         swal.fire("sua compra deu o total de R$:" +somar)
+        console.log(desc)
+        
     }
-    else
+    else if (desc == 1)
     {
         swal.fire("Sua compra deu o total de R$:"+result)
+        console.log(desc)
+    
     }
 
     

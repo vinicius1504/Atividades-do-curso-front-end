@@ -277,14 +277,14 @@ body {
 }
 
 
-
+/* aba do carrinho */
 
 .CarrinhoTopo {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     flex-direction: row;
-    background-color: rgb(71, 49, 37);
+    background-color: rgb(143, 97, 73);
     border: 1px black solid;
 }
 
@@ -294,14 +294,20 @@ body {
 }
 
 .AbaCarrinho {
+    position: fixed;
     display: flex;
     flex-direction: column;
-    width: 12rem;
-    height: 500px;
+    width: 16rem;
+    height: 100%;
 }
 
 .meiocarrinho{
     height: 100%;
-    background-color: blanchedalmond;
+    background-color: rgb(255, 238, 213);
     
+}
+
+.Bnts_compras{
+    display: flex;
+    flex-direction: column;
 }
