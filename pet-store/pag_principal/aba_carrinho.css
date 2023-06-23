@@ -1,0 +1,99 @@
+@import url('https://fonts.cdnfonts.com/css/lexend-mega');
+
+* {
+    font-family: 'Lexend Mega', sans-serif;
+
+}
+
+.CarrinhoTopo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: #3F261C;
+    border: 1px black solid;
+    height: 80px;
+}
+
+.BntCarrinho img {
+    width: 26px;
+    height: 22.556px;
+}
+
+.BntCarrinho button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 51px;
+    height: 52px;
+    border-radius: 50px;
+}
+
+.AbaCarrinho {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 100%;
+    transition: left 2s;
+    border-radius: 20px;
+}
+
+.meiocarrinho {
+    display: flex;
+    height: 100%;
+    background-color: #D9D9D9;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produtos_Carrinho{
+    font-size: 20px;
+    text-align: center;
+    margin: 100px 5px 0px 5px;
+    padding: 14px;
+    border: 1px solid black;
+
+}
+
+.Bnts_compras {
+    display: flex;
+    flex-direction: column;
+}
+
+.areap_Bnts_compras {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.Bnts_compras button {
+    padding: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.Bnts_compras .Finalizar {
+    margin-bottom: 10px;
+    background: rgba(8, 98, 83, 0.42);
+}
+
+.Bnts_compras .Coninuar {
+    margin-bottom: 25px;
+    background: rgba(63, 38, 28, 0.42);
+}
+
+.CarrinhoGeral {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.txtcar p {
+    background-color: #D9D9D9;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}

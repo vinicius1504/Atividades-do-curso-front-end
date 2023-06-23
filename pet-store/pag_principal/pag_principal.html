@@ -10,36 +10,44 @@
 </head>
 
 <body>
-    <div class="AbaCarrinho" id="AbaCarrinho">
-        <div class="CarrinhoTopo">
-            <div class="txtcar">
-                <p>Meu Carrinho</p>
+    <div class="CarrinhoGeral" id="CarrinhoGeral">
+        <div class="AbaCarrinho" id="AbaCarrinho">
+            <div class="CarrinhoTopo">
+                <div class="txtcar">
+                    <p>Meu Carrinho</p>
+                </div>
+                <div class="BntCarrinho">
+                    <button id="feccharCarrinho">
+                        <img src="/pet-store/img/🦆 icon _shop cart thin_.png" alt="">
+                    </button>
+                </div>
             </div>
-            <div class="BntCarrinho">
-                <button id="feccharCarrinho">
-                    <img src="/pet-store/img/carinho.png" alt="">
-                </button>
-            </div>
-        </div>
-        <div class="meiocarrinho">
-            <div class="produto_carrinho">
-                <div class="Card_Carrinho">
-                    <div class="">
-                        <img src="" alt="">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div class="areap_Bnts_compras">
-                        <div class="Bnts_compras">
-                            <button onclick="feccharCarrinho"> Finalizar Compra</button>
-                            <button> Coninuar Comprando</button>
+            <div class="meiocarrinho">
+                <div class="produtos_Carrinho">
+                    <div class="CardCarrinho">
+                        <div class="semProduto">
+                            <p>Seu carrinho está vazio</p>
                         </div>
+                    </div>
+                </div>
+
+                <div class="produto_carrinho">
+                    <div class="Card_Carrinho">
+                    </div>
+                </div>
+
+                <div class="areap_Bnts_compras">
+                    <div class="txtoal">
+                        <p>Total</p>
+                    </div>
+                    <div class="Bnts_compras">
+                        <button class="Finalizar"> Finalizar Compra</button>
+                        <button class="Coninuar"> Coninuar Comprando</button>
                     </div>
                 </div>
             </div>
         </div>
-     </div>
+    </div>
     <div class="topo">
         <div class="fundo">
             <div class="login">
@@ -47,8 +55,8 @@
                 <a href="" class="btn">Cadastrar</a>
             </div>
             <div class="carrinho">
-                <button href="#" id="abrir_carinho" >
-                    <img src="/pet-store/img/carinho.png" alt="">
+                <button href="#" id="abrir_carinho">
+                    <img src="/pet-store/img/🦆 icon _shop cart thin_.png" alt="">
                 </button>
             </div>
         </div>
@@ -99,4 +107,3 @@
 <script src="/pet-store/pag_principal/pag_principal.js"></script>
 
 </html>
-

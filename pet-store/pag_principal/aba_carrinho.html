@@ -5,43 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            margin: 0 0;
-        }
-
-        .CarrinhoTopo {
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-end;
-            flex-direction: row;
-            background-color: rgb(71, 49, 37);
-            border: 1px black solid;
-        }
-
-        .BntCarrinho img {
-            height: 41px;
-            width: 42px;
-        }
-
-        .AbaCarrinho {
-            display: flex;
-            flex-direction: column;
-            width: 12rem;
-            height: 500px;
-        }
-
-        .meiocarrinho{
-            height: 100%;
-            background-color: blanchedalmond;
-            
-        }
-
-    </style>
+    <link rel="stylesheet" href="/pet-store/pag_principal/aba_carrinho.css">
 </head>
 
 <body>
+    <div class="CarrinhoGeral">
+        <div class="AbaCarrinho" id="AbaCarrinho">
+            <div class="CarrinhoTopo">
+                <div class="txtcar">
+                    <p>Meu Carrinho</p>
+                </div>
+                <div class="BntCarrinho">
+                    <button id="feccharCarrinho">
+                        <img src="/pet-store/img/🦆 icon _shop cart thin_.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="meiocarrinho">
+                <div class="produtos_Carrinho">
+                    <div class="CardCarrinho">
+                        <div class="semProduto">
+                            <p>Seu carrinho está vazio</p>
+                        </div>
+                    </div>
+                </div>
 
+                    <div class="Bnts_compras">
+                        <button class="Finalizar"> Finalizar Compra</button>
+                        <button class="Coninuar"> Coninuar Comprando</button>
+                    </div>
+            </div>
+        </div>
 </body>
 
 </html>

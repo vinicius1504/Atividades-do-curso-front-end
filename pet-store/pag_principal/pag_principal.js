@@ -2,13 +2,13 @@ var botao = document.getElementById("bt");
 var card = document.getElementsByClassName("produto")[0];
 var bntcarrinhoclose = document.getElementById("feccharCarrinho")
 var bntcarrinhopen = document.getElementById("abrir_carinho")
-var AbaCarrinho = document.getElementById("AbaCarrinho")
+var AbaCarrinho = document.getElementById("CarrinhoGeral")
 
 bntcarrinhoclose.onclick = function(){
-   AbaCarrinho.style.left= "50cm"
+   AbaCarrinho.style.cssText="margin-left: 500cm;"
 }
 bntcarrinhopen.onclick = function(){
-    AbaCarrinho.style.left= "33cm"
+    AbaCarrinho.style.cssText="margin-left: 0cm;"
 }
 
 
