@@ -5,13 +5,15 @@ var bntcarrinhopen = document.getElementById("abrir_carinho")
 
 
 
-bntcarrinhoclose.onclick = function(){
+
+
+function fecharCarinho (){
    AbaCarrinho = document.getElementById("AbaCarrinho")
    while (AbaCarrinho.hasChildNodes()) {
       AbaCarrinho.removeChild(AbaCarrinho.firstChild);
     }
-
 }
+bntcarrinhoclose.onclick = fecharCarinho
 
 function abrircarriho(){
    AbaCarrinho = document.getElementById("AbaCarrinho")
