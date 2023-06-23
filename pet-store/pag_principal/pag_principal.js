@@ -52,7 +52,7 @@ function abrircarriho(){
    AbaCarrinho.innerHTML += abaCarrinho
 
 }
-
+bntcarrinhopen.onclick = abrircarriho
 
 // alert("Otimas Compras!")
 function teste_bnt() {
