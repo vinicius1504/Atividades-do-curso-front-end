@@ -2,58 +2,18 @@ var botao = document.getElementById("bt");
 var card = document.getElementsByClassName("produto")[0];
 var bntcarrinhoclose = document.getElementById("feccharCarrinho")
 var bntcarrinhopen = document.getElementById("abrir_carinho")
+var AbaCarrinho = document.getElementById("AbaCarrinho")
 
-
-
-
-
-function fecharCarinho (){
-   AbaCarrinho = document.getElementById("AbaCarrinho")
-   while (AbaCarrinho.hasChildNodes()) {
-      AbaCarrinho.removeChild(AbaCarrinho.firstChild);
-    }
+bntcarrinhoclose.onclick = function(){
+   AbaCarrinho.style.left= "50cm"
 }
-bntcarrinhoclose.onclick = fecharCarinho
-
-function abrircarriho(){
-   AbaCarrinho = document.getElementById("AbaCarrinho")
-   abaCarrinho = `
-   <div class="AbaCarrinho" id="AbaCarrinho">
-   <div class="CarrinhoTopo">
-       <div class="txtcar">
-           <p>Meu Carrinho</p>
-       </div>
-       <div class="BntCarrinho">
-           <a href="#" id="feccharCarrinho">
-               <img src="/pet-store/img/carinho.png" alt="">
-           </a>
-       </div>
-   </div>
-   <div class="meiocarrinho">
-       <div class="produto_carrinho">
-           <div class="Card_Carrinho">
-               <div class="">
-                   <img src="" alt="">
-                   <p></p>
-                   <p></p>
-                   <p></p>
-               </div>
-               <div class="areap_Bnts_compras">
-                   <div class="Bnts_compras">
-                       <button> Finalizar Compra</button>
-                       <button> Coninuar Comprando</button>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
-</div>
-   `
-   AbaCarrinho.innerHTML += abaCarrinho
-
+bntcarrinhopen.onclick = function(){
+    AbaCarrinho.style.left= "33cm"
 }
-bntcarrinhopen.onclick = abrircarriho
 
+
+
+ 
 // alert("Otimas Compras!")
 function teste_bnt() {
    for (let i = 0; i <data_end.itens.length; i++) {

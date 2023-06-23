@@ -294,6 +294,9 @@ body {
     flex-direction: column;
     width: 16rem;
     height: 100%;
+    left: 50cm;
+    transition: left 2s;
+    border-radius: 20px;
 }
 
 .meiocarrinho{
