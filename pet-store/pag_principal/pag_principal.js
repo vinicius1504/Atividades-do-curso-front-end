@@ -1,21 +1,58 @@
 var botao = document.getElementById("bt");
 var card = document.getElementsByClassName("produto")[0];
+var bntcarrinhoclose = document.getElementById("feccharCarrinho")
+var bntcarrinhopen = document.getElementById("abrir_carinho")
 
 
-function alets (){
 
+bntcarrinhoclose.onclick = function(){
+   AbaCarrinho = document.getElementById("AbaCarrinho")
+   while (AbaCarrinho.hasChildNodes()) {
+      AbaCarrinho.removeChild(AbaCarrinho.firstChild);
+    }
 
 }
 
+function abrircarriho(){
+   AbaCarrinho = document.getElementById("AbaCarrinho")
+   abaCarrinho = `
+   <div class="AbaCarrinho" id="AbaCarrinho">
+   <div class="CarrinhoTopo">
+       <div class="txtcar">
+           <p>Meu Carrinho</p>
+       </div>
+       <div class="BntCarrinho">
+           <a href="#" id="feccharCarrinho">
+               <img src="/pet-store/img/carinho.png" alt="">
+           </a>
+       </div>
+   </div>
+   <div class="meiocarrinho">
+       <div class="produto_carrinho">
+           <div class="Card_Carrinho">
+               <div class="">
+                   <img src="" alt="">
+                   <p></p>
+                   <p></p>
+                   <p></p>
+               </div>
+               <div class="areap_Bnts_compras">
+                   <div class="Bnts_compras">
+                       <button> Finalizar Compra</button>
+                       <button> Coninuar Comprando</button>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+   `
+}
 
 
-
-
-alert("Otimas Compras!")
+// alert("Otimas Compras!")
 function teste_bnt() {
-   
    for (let i = 0; i <data_end.itens.length; i++) {
-
       cards = `
       <div class='cards'>
     <div class='bxbt'>
@@ -41,16 +78,14 @@ function teste_bnt() {
     </div>
 </div>
    `
-  
-   console.log(data_end.itens[i].id)
-      card.innerHTML += cards
 
+   card.innerHTML += cards
 
    }
 }
 
 
-window.onload = setTimeout(teste_bnt,(2000))
+window.onload = setTimeout(teste_bnt,(1000))
 
 // botao.onclick = teste_bnt
 
