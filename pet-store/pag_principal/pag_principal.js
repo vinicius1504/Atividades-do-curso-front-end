@@ -49,13 +49,15 @@ function abrircarriho(){
    </div>
 </div>
    `
+   AbaCarrinho.innerHTML += abaCarrinho
+
 }
 
 
 // alert("Otimas Compras!")
 function teste_bnt() {
    for (let i = 0; i <data_end.itens.length; i++) {
-      cards = `
+      Cards = `
       <div class='cards'>
     <div class='bxbt'>
         <div class='itens'>
@@ -81,7 +83,7 @@ function teste_bnt() {
 </div>
    `
 
-   card.innerHTML += cards
+   card.innerHTML += Cards
 
    }
 }
