@@ -10,7 +10,7 @@ var senha = "12345"
 
 function repostaLg() { // função para o usuario responder se esta certo o usuario
     verificar(user, password)
-    if (user.value == nome && password.value == senha){
+    if (user.value == usuario.users && password.value == senha){
         alert("bem vindo " + user.value)
         location.href('/pet-store/pag_principal.html')
     }
@@ -20,24 +20,24 @@ function repostaLg() { // função para o usuario responder se esta certo o usua
 }
 
 function verificar (user, password){ //função para verificar se é igual
-        if (user.value == nome && password.value == senha){
+        if (user.value == usuario.users && password.value == senha){
             return true
         }
             
     }
     
 
-function Showpassword() {
+ShowPass.onclick = function() {
         // console.log("ola")
         if (password.type == 'text') {
             password.type = 'password'
         } else {
             password.type = 'text'
         }
-    }
+}
 
 loginBnt.onclick = repostaLg
-ShowPass.onclick = Showpassword
+ 
 const usuario = {
     "users": [
         {
